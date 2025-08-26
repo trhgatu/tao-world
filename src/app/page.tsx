@@ -1,15 +1,11 @@
 'use client'
 
-import dynamic from 'next/dynamic';
-
-const StarScene = dynamic(() => import('@/components/scenes/StarScene'), {
-  ssr: false,
-});
+import Hero from '@/components/Hero';
 
 export default function Home() {
   return (
     <div>
-      <StarScene/>
+      <Hero/>
     </div>
   );
 }
